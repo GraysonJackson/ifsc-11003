@@ -1,4 +1,25 @@
-/* Course Homepage CSS */
+/* CSS Demo */
+/* Reset box-sizing for easier sizing */
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+/* Basic body styling */
 body {
-    background-color:blueviolet;
+  font-family: 'Times New Roman', Times, serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color:rgb(87, 100, 111);
+    color: #d4cccc;
+}
+header.primary{
+  background:rgb(79, 129, 145);
+  color:#ffffff;
+  text-align:center;
+  text-shadow: 1px 1px #000000;
 }
