@@ -8,7 +8,20 @@ html {
 *:after {
   box-sizing: inherit;
 }
-/* Basic body styling */
+
+/* utiliy classes */
+.container {
+  width: 80vw;
+  max-width: 960px;
+  margin: 40px auto;
+}
+
+/* Responsive Images */
+  img {
+    max-width: 100%;
+  }
+
+/* Global Styles */
 body {
   font-family: "Fontdiner Swanky", serif;
     line-height: 1.6;
@@ -70,4 +83,51 @@ header.primary nav a{
 }
 header.primary nav a:hover {
   background-color:rgba(0,0,0,.8);
+}
+
+
+#intro h2{
+  color: #d4cccc;
+ border-bottom: 1px dotted #c0c0c0;
+}
+
+#content{
+  display:flex;
+  flex-direction:row;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+#content.post{
+  box-shadow: 0 4px 8px rgba(0,0,0,.6);
+  padding: 10px;
+  font-size: .8rem;
+}
+
+figure{margin: 0;}
+
+#content time, figcaption {
+  font-size: .7rem;
+  text-transform: uppercase;
+}
+
+#content a {
+  color: #d4cccc;
+  font-weight: bold;
+}
+
+/*------------------Media Queries -------------------*/
+
+@media screen and (max-width:500px){
+  
+header.primary nav ul{
+  flex-direction:column;
+  gap:10px;
+}  
+  
+  header.primary nav a {
+    display:block;
+  } 
+  
+  
 }
