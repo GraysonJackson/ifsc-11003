@@ -116,6 +116,47 @@ figure{margin: 0;}
   font-weight: bold;
 }
 
+aside[role="complementary"]{
+  background:#354038;
+  color:#d4cccc;
+  padding:40px 0;
+  margin-left:20px;
+  flex:1; /* Take up remaining space */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
+}
+
+aside .container{
+  display:flex;
+  flex-direction:row;
+  gap:40px;
+}
+
+aside .container a{
+color:#d4cccc;
+}
+
+aside .container a:last-child{
+  display:block;
+  text-align:right;
+  margin-top:20px;
+}
+
+article.widget footer{
+  display:none;
+}
+
+/#colophon{}
+footer[role="contentinfo"]{}
+footer.primary{}
+footer:last-child{}*/
+
+#colophon{
+background-color: #48594E;
+padding:5px;
+color:#d4cccc;
+text-align:center;
+text-shadow:1px 1px #262625;
+}
 /*------------------Media Queries -------------------*/
 
 @media screen and (max-width:500px){
