@@ -1,6 +1,3 @@
-/* ================================
-   RESET & BASE
-================================ */
 * {
     margin: 0;
     padding: 0;
@@ -19,19 +16,12 @@ body {
     padding: 0 1rem;
 }
 
-
-/* ================================
-   HEADINGS
-================================ */
 h1, h2, h3, h4 {
     font-family: 'Fontdiner Swanky', cursive;
     color: #b93f7b; /* deep rose for contrast */
     margin-bottom: 0.5rem;
 }
 
-/* ================================
-   NAVIGATION BAR
-================================ */
 .navigation {
     background: #ffd6e8; /* pastel pink */
     border-bottom: 3px solid #e7a4c8;
@@ -65,9 +55,6 @@ nav a:focus {
     outline-offset: 3px;
 }
 
-/* ================================
-   HEADER IMAGES
-================================ */
 header img {
     width: 500px;
     border: 5px solid #ffd6e8;
@@ -76,9 +63,6 @@ header img {
     margin: 1rem auto;
 }
 
-/* ================================
-   MAIN CONTENT BOX
-================================ */
 .main {
     background: #ffffff;
     border: 2px solid #e7a4c8;
@@ -94,7 +78,6 @@ p {
     font-size: 1.1rem;
 }
 
-/* Lists */
 ul, ol {
     margin-left: 2rem;
     margin-bottom: 1.5rem;
@@ -104,7 +87,6 @@ li {
     margin-bottom: 0.5rem;
 }
 
-/* Blockquotes */
 blockquote {
     display: block;
     background: #f9dbe9;
@@ -116,9 +98,6 @@ blockquote {
 }
 
 
-/* ================================
-   LINKS
-================================ */
 a {
     color: #b93f7b;
 }
@@ -130,9 +109,6 @@ a:focus {
     outline-offset: 2px;
 }
 
-/* ================================
-   FOOTER
-================================ */
 footer {
     margin-top: 3rem;
     padding: 1rem;
@@ -142,9 +118,7 @@ footer {
     text-align: center;
 }
 
-/* ================================
-   RESPONSIVE DESIGN
-================================ */
+
 @media (max-width: 600px) {
     nav ul {
         flex-direction: column;
@@ -158,4 +132,39 @@ footer {
     .main {
         padding: 1rem;
     }
+}
+
+.container {
+    margin: 40px auto;
+    width: 70vw;
+    max-width: 700px;
+}
+
+.slick-autoplay-toggle-button,
+.slick-prev .slick-prev-icon, 
+.slick-next .slick-next-icon,
+.slick-dots li button .slick-dot-icon,
+.slick-dots li.slick-active button .slick-dot-icon {
+    color: #b93f7b; 
+}
+
+.slick-next:focus .slick-next-icon,
+.slick-next:focus .slick-prev-icon,
+.slick-prev:focus .slick-next-icon,
+.slick-prev:focus .slick-prev-icon,
+.slick-dots li button:focus .slick-dot-icon:before,
+.slick-dots li.slick-active button:focus .slick-dot-icon,
+.slick-autoplay-toggle-button:focus {
+    color: #7a2e57;
+    outline: 2px solid #b93f7b;
+    outline-offset: 3px;
+}
+
+.fade img {
+    width: 100%;
+    height: 400px;
+    object-fit: contain;
+    background: #ffd6e8;
+    display: block;
+    border-radius: 10px;
 }
